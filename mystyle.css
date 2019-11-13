@@ -1,6 +1,6 @@
 body
 {
-background-image: url("img/cod.jpg");
+background-image: url('cod.jpg');
 width: 90%;
 margin-left: auto;
 margin-right: auto;
@@ -19,7 +19,7 @@ a {
   padding-top: 10px;
 }
 .content{
-    padding-top: 15px;
+    padding-top: 10px;
     margin-left: auto;
     margin-right: auto;
 }
@@ -37,23 +37,45 @@ padding:5px;
 padding-bottom:5px;
 }
 
+ul li a {
+ display:block;
+}
+
 .list li p{
   padding-left:7px;
   padding-right: 4px;
   text-decoration:none ;
   color: black ;
   font-weight: bold;
-  font-family: monospace, Helvetica, Arial, sans-serif;
+  font-family: 'Droid Sans', Helvetica, Arial, sans-serif;
+}
+
+#logged_in {
+	float:right ;
+}
+#lgo{
+  color:#f93636;
+}
+
+.errorHolder {
+	font-size: 16px ;
+	color: red ;
+}
+
+.loginContent {
+		display:block ;
+    padding-top: 60px;
+    margin-left: auto;
+    margin-right: auto;;
 }
 
 .panel-header {
 	height: 23px;
-	margin-top:20px ;
-	padding: 5px 6px;
+	margin-top:15px ;
+	padding: 6px 6px;
 	background-color: black;
 	font-size: 14px;
-	font-family: Georgia, "Times New Roman", Times, serif;
-  border: 1px solid black;
+	font-family: 'Droid Sans', "Times New Roman", Times, serif;
 	border-top-left-radius: 5px;
 	border-top-right-radius: 5px;
 }
@@ -61,12 +83,11 @@ padding-bottom:5px;
 .panel-header h1 {
 	margin-left: 6px;
 	display: inline;
-	font-size: 18px;
-  color: white;
+	font-size: 24px;
+  color:#2377ff;
 }
 
-.panel-header .panel-icons
-{
+.panel-header .panel-icons {
 	float: right;
 }
 
@@ -74,15 +95,91 @@ padding-bottom:5px;
 	margin-left: 6px;
 }
 
+.form {
+
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 20px;
+}
+
 .panel-body {
 	border: solid 1px #ccc;
-	padding: 10px;
 	margin-bottom: 0px;
 
 }
 
+#try_again{
+  width: 95%;
+  border: 1px solid #ccc;
+  text-align: center;
+  padding-right: 4px;
+  text-decoration:none ;
+  color: blue ;
+  font-weight: bold;
+  font-family: 'Droid Sans', Helvetica, Arial, sans-serif;
+  display:inline;
+  float: left;
+  padding:5px;
+  padding-bottom:5px;
+  -webkit-appearance: button;
+  -moz-appearance: button;
+  appearance: button;
+  text-decoration: none;
+  background-color: transparent;
+}
+
+#try_again:hover{
+background-color: #ccc;
+}
+
+#Success{
+  padding-right: 4px;
+  text-decoration:none ;
+  color: green ;
+  font-weight: bold;
+  font-family: 'Droid Sans', Helvetica, Arial, sans-serif;
+}
+
+#add{
+  font-size: 18px;
+}
+
+.actionButton {
+    width: 120px;
+    background-color: black;
+    color: white;
+    padding: 14px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+		margin-top: 30px ;
+		display: block;
+    border: 1px solid black;
+}
+.actionButton:hover {
+    background-color: #737373;
+}
+
+#remove:hover{
+  background-color: red;
+}
+
+select {
+    -webkit-appearance: button;
+    -moz-appearance: button;
+    background-color: transparent;
+}
+
+select:focus{
+  background-color: #e2edff;
+}
+
+input[type=text]:focus {
+    background-color: #e2edff;
+}
+
 input[type=text], select {
-    width: 30%;
+    width: 50%;
     padding: 12px 20px;
     display: inline-block;
     border: 1px solid black;
@@ -92,38 +189,68 @@ input[type=text], select {
 }
 
 input[type=password] {
-    width: 80%;
+    width: 50%;
     padding: 12px 20px;
-
     display: inline-block;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    box-sizing: border-box;
+    border: 1px solid black;
+    border-radius: 2px;
+    box-sizing: content-box;
 		display: block;
 }
 
 input[type=submit] {
-    width: 10%;
+    width: 120px;
     background-color: #1a1a1a;
     color: white;
     padding: 14px 20px;
-    border: none;
     border-radius: 4px;
     cursor: pointer;
-		margin-top: 30px ;
+		margin-top: 10px ;
 		display: block;
+    font-size: 18px;
+    border: 1px solid black;
 }
 
 input[type=submit]:hover {
 
-    background-color: #737373;
+    background-color: #2ff229;
+    color: black;
 }
 
+input[type=button]{
+  width: 120px;
+  background-color: #1a1a1a;
+  color: white;
+  padding: 14px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-top: 10px ;
+  display: block;
+  font-size: 18px;
+}
+
+input[type=button], #delALL{
+  color: #f93636;
+}
+
+#addS{
+  width: 120px;
+  background-color: #1a1a1a;
+  color: white;
+  padding: 14px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-top: 10px ;
+  display: block;
+  font-size: 18px;
+}
 .form {
     background-color: white;
     padding: 5px;
 }
-/* Remove margins and padding from the list, and add a black background color */
+
 .topnav {
     list-style-type: none;
     margin: 0;
@@ -136,7 +263,6 @@ input[type=submit]:hover {
   	border-top-right-radius: 5px;
 }
 
-/* Float the list items side by side */
 .topnav li{
 	float:left;
   padding-left: 2%;
@@ -144,12 +270,12 @@ input[type=submit]:hover {
   margin-right: inherit;
 }
 
-/*Add your rule to float the topnav here */
+
 .logo{
   display: block;
 }
 
-/* Style the links inside the list items */
+
 .topnav li a {
     display: inline-block;
     color: #f2f2f2;
@@ -161,12 +287,12 @@ input[type=submit]:hover {
     cursor: pointer;
 }
 
-/* Change background color of links on hover */
+
 .topnav li a:hover{
-	color: blue;
+	color: #2377ff;
 }
 
-/* Hide the list item that contains the link that should open and close the topnav on small screens */
+
 .topnav li.icon {
 	display: none;
 }
@@ -175,10 +301,11 @@ ul li a {
  display:block;
 }
 
-.logo_mobile{
-  display: none;
+.logo_login {
+    float:left ;
+    border: none;
 }
-/* panel styles */
+
 .foot {
     background: none repeat scroll 0 0 transparent;
     bottom: 0;
@@ -197,6 +324,9 @@ ul li a {
 }
 .content_mobile{
   display: none;
+}
+.contt{
+  display: block;
 }
 #footer a {
 	color: black;

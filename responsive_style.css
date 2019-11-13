@@ -40,13 +40,6 @@
 		display:none ;
 	}
 
-	.logo_mobile
-	{
-		display:inline ;
-		background-color: none;
-		height: 8%;
-		width:auto;
-	}
 	#logged_in {
 		float:left ;
 	}
@@ -56,6 +49,7 @@
 	margin: 250px ;
 
 	}
+
 .cont{
 	display: none;
 }
