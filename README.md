@@ -1,4 +1,4 @@
-# Website-Coursework-
+# THIS CANNOT BE RUN since it is on a university server
 
 My website displays a navigation bar which includes a Home, Stocks,
 About and Contact Us buttons for employees to navigate through the
