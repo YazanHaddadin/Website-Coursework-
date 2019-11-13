@@ -1,0 +1,71 @@
+<html>
+<head>
+  <title>Gaming Industry</title>
+  <meta name="viewport" content="width=device-width,user-scalable=no"/>
+  <link href="mystyle.css" rel='stylesheet' type='text/css'>
+  <link href = "responsive_style.css" rel='stylesheet' type='text/css'/>
+  <link rel="shortcut icon" type="image/png" href="img/title.png" />
+  <script src="mobile_menu.js"></script>
+</head>
+
+<body>
+
+  <div>
+    <img class = 'logo' src="img/controller.png" width= '150px' height= '90px' align= 'middle'>
+  </div>
+    <ul class = 'topnav' id = 'myTopnav'>
+      <img class = 'logo_mobile' src="img/pacman.png" width= '150px' height= '90px'>
+      <img class = 'logo_mobile' src="img/ghost.png" width= '150px' height= '90px'>
+      <li class="firstli">
+      <li><a href="Website.html">Home</a></li>
+      <li><a href="stocks.html">Stocks</a></li>
+      <li><a href="#panel">About</a></li>
+      <li><a href="#footer">Contact us</a></li>
+      <li class="icon"> <a href="javascript:void(0);" onclick="showResponsiveMenu()">&#9776;</a> </li>
+    </li>
+  </ul>
+    <div class="content">
+
+      <div class="panel-header" id="panel"><h1>Stocks</h1></div>
+      <div class="panel-body">
+        <div class= "form">
+        <form action="events.php" method="post">
+          <p><strong>Add Stocks</strong></p>
+          <input type="text" name="myname" value="" >
+          <input id="add" type="submit" value="Submit">
+          <p><strong>Remove Stocks</strong></p>
+          <select name="type">
+            <option> -- </option>
+            <option value="Academic">Academic</option>
+            <option value="Sport">Sport</option>
+            <option value="Social">Social</option>
+            <option value="All">All</option>
+          </select>
+          <input id="remove" type="submit" value="Submit">
+        </form>
+      </div>
+      <div class="cont1">
+        <img src="img/stocks.jpg" width = '100%' height = '60%'>
+      </div>
+      <div class="content_mobile">
+        <img src="img/stocks.jpg" width = '100%' height = '40%'>
+      </div>
+    </div>
+    <div
+     class = "foot"
+     id="footer">
+                  <a id =-"fb" href="http://www.facebook.com" target="_blank" title="Like this page on Facebook"><img src="img/fb.ico" width= "7%" height = "10%"></a>
+                  <a id = "twit" href="http://www.twitter.com" target="_blank" title="Follow this page on Twitter"><img src="img/twitter.png" width= "7%" height = "10%"></a>
+                  <a id = "insta" href="http://www.instagram.com" target="_blank" title="Follow this page on Instagram"><img src="img/insta.png" width= "7%" height = "10%"></a>
+                  <a id = "insta" href="https://plus.google.com/" target="_blank" title="Follow this page on Google Plus"><img src="img/ggp.png" width= "7%" height = "10%"></a>
+
+    </div>
+    <div
+    class='foot_mobile'
+    id="footer">
+          <a id =-"fb" href="http://www.facebook.com" target="_blank" title="Like this page on Facebook"><img src="img/fb.ico" width= "15%" height = "8%"></a>
+          <a id = "twit" href="http://www.twitter.com" target="_blank" title="Follow this page on Twitter"><img src="img/twitter.png" width= "15%" height = "8%"></a>
+          <a id = "insta" href="http://www.instagram.com" target="_blank" title="Follow this page on Instagram"><img src="img/insta.png" width= "15%" height = "8%"></a>
+          <a id = "insta" href="https://plus.google.com/" target="_blank" title="Follow this page on Google Plus"><img src="img/ggp.png" width= "15%" height = "8%" ></a>
+    </div>
+</html>

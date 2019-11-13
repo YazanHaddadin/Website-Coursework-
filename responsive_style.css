@@ -1,0 +1,76 @@
+@media screen and (max-width:680px) {
+
+	.topnav li {
+		display: none;
+	}
+
+	.topnav li.icon {
+		float: right;
+		display: inline-block;
+	}
+
+  .topnav.responsive {
+		position: relative;
+	}
+
+  .topnav.responsive li.icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+
+  .topnav.responsive li {
+    float: none;
+    display: inline;
+  }
+
+  .topnav.responsive li a {
+    display: block;
+    text-align: left;
+
+  }
+
+	.topnav
+	{
+		margin-top: 5px ;
+	}
+
+	.logo
+	{
+		display:none ;
+	}
+
+	.logo_mobile
+	{
+		display:inline ;
+		background-color: none;
+		height: 8%;
+		width:auto;
+	}
+	#logged_in {
+		float:left ;
+	}
+
+	.firstli
+	{
+	margin: 250px ;
+
+	}
+.cont{
+	display: none;
+}
+.content_mobile{
+	display: block;
+}
+.foot{
+	display: none;
+}
+.foot_mobile{
+	display: block;
+	background: none repeat scroll 0 0 transparent;
+	bottom: 0;
+	position:static;
+	text-align: center;
+	width: 100%;
+}
+}
